@@ -3,6 +3,20 @@ Based on codepen Magic Card by @gayane-gasparyan.
 I just wanted to make an animated border.
 */
 
+/*
+TODO: 
+
+Challenge: this @property construct, where you can make your own properties which
+can then be used directly as a calculated value in a keyframe, that's super powerful,
+BUT... looks like only Chrome supports it! I tried it in Firefox - doesn't work. I
+heard it doesn't work in Safari either. 
+
+So that's the challenge: try some other method of grabbing the intermediate calculated
+values of a keyframe, and stick that value into a custom CSS variable (just like --card-height
+and --card-width under ":root{}" below). If you could just get that value in a CSS var,
+you could then reference it in the "background-image: linear-gradient()" function as the
+first parameter using just "var()."
+*/
 @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
